@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bistre: #352c1eff;
+  --walnut-brown: #5a5147ff;
+  --sepia: #7d4c15ff;
+  --ecru: #d8b571ff;
+  --dun: #cdbfacff;
+}
+
+body {
+  background-color: var(--dun);
+}
+
+h2 {
+  color: var(--bistre);
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 35px;
+  columns: var(--bistre);
+  text-align: center;
+  font-family: "Raleway", serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "Raleway", serif;
+}
+
+.coming-soon-container {
+  width: 100%;
+  background-color: whitesmoke;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.coming-soon-title {
+  font-size: 60px;
+}
+.coming-soon-text {
+  padding: 30px 0;
+  font-family: "Roboto", "serif";
+}
+
+.coming-soon-icons i {
+  color: var(--ecru);
+  font-size: 40px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.coming-soon-icons i:hover {
+  color: var(--walnut-brown);
+  font-size: 40px;
+}
+
+.header-container {
+  width: auto;
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+
+.socials-bar {
+  width: 100%;
+  background-color: var(--dun);
+  color: var(--walnut-brown);
+  font-size: 20px;
+  padding: 10px 0;
+}
+.socials-bar i {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.socials-bar i:hover {
+  color: whitesmoke;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu ul a {
+  text-decoration: none;
+  font-family: "Raleway", serif;
+  font-size: 25px;
+  color: var(--bistre);
+  padding: 20px 10px;
+}
+
+.menu ul a:hover {
+  color: var(--sepia);
+  text-decoration: underline;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-image: url(images/galleywood-common.jpeg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position-x: 50%;
+  background-position-y: 80%;
+}
+
+.title {
+  font-family: "Spectral", serif;
+  font-size: 60px;
+  color: white;
+  background: rgba(57, 57, 57, 0.5);
+  padding: 10px;
+  text-align: center;
+}
+
+.book-button {
+  background-color: var(--walnut-brown);
+  color: var(--ecru);
+  font-family: "Raleway", serif;
+  margin-top: 45px;
+  font-size: 30px;
+  padding: 10px 20px;
+  border: 3px solid var(--walnut-brown);
+  border-radius: 15px;
+  border: none;
+}
+
+.book-button:hover {
+  color: var(--walnut-brown);
+  background-color: whitesmoke;
+}
+
+.about {
+  background-color: var(--var-dark-green);
+  margin: 160px auto 80px auto;
+  width: 75%;
+  height: auto;
+  color: var(--bistre);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-logo {
+  max-width: 250px;
+}
+
+.about p {
+  padding: 20px;
+  font-size: 22px;
+  font-family: "Raleway", serif;
+}
+
+.icons-container {
+  width: 90%;
+  margin: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+.icon-box i {
+  font-size: 60px;
+  padding-bottom: 10px;
+  color: var(--bistre);
+}
+
+.icon-box h6 {
+  font-size: 30px;
+  font-family: "Spectral", serif;
+  color: var(--walnut-brown);
+}
+
+.icon-box i:hover {
+  border-bottom: 3px solid whitesmoke;
+  width: 75%;
+  text-align: center;
+}
+
+.icon-box p {
+  font-size: 18px;
+  font-family: "Roboto", serif;
+  color: var(--walnut-brown);
+}
+
+.gallery-section {
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 60px 0;
+}
+
+.gallery-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-img-box img {
+  max-width: 300px;
+}
+
+.mapouter {
+  margin: 50px auto;
+}
+
+.find-us-container {
+  width: 100%;
+  margin: 60px auto;
+}
+
+.find-us-info {
+  background-color: whitesmoke;
+  width: 80%;
+  margin: 60px 0;
+  padding: 60px;
+}
+
+.find-us-info span {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.faq-box {
+  margin-bottom: 40px;
+}
+
+.faq-box p {
+  font-size: 18px;
+}
+
+/** Out and About Info **/
+
+.common-container {
+  width: 80%;
+  background-color: whitesmoke;
+  margin: 40px 0;
+  padding: 40px;
+}
+
+.common-img-box {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.common-img {
+  max-width: 150px;
+}
+
+.racecourse-img {
+  max-width: 250px;
+  margin: 20px 0;
+}
+
+.common-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.left-col,
+.right-col {
+  width: 50%;
+}
+
+.left-col img {
+  width: 100%;
+  height: 350px;
+}
+
+.right-col {
+  padding: 30px;
+}
+
+.right-col p {
+  font-size: 15px;
+}
+
+/** End of Out and about info **/
+
+footer {
+  width: 100%;
+  margin-top: 250px;
+  background-color: whitesmoke;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer img {
+  height: 200px;
+}
+.useful-links h5 {
+  color: var(--bistre);
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: "Raleway", serif;
+}
+.useful-links ul {
+  list-style: none;
+}
+
+.useful-links a {
+  font-family: "Raleway", serif;
+  color: var(--sepia);
+  text-decoration: none;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+}
+.copy {
+  font-family: "Raleway", serif;
+  margin: 10px;
+  color: var(--bistre);
+}
+
+.copy i {
+  padding: 5px;
+}
+
+.copy a {
+  color: var(--walnut-brown);
+}
