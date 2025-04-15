@@ -86,30 +86,42 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <div class="socials-bar">
-          <a><i class="fa-brands fa-instagram"></i></a>
-          <a><i class="fa-regular fa-envelope"></i></a>
-          <a><i class="fa-solid fa-phone"></i></a>
-        </div>
+      <div class="socials-bar">
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:melcornish@me.com?subject=New Oak Nook Enquiry"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+        <a><i class="fa-solid fa-phone"></i></a>
+      </div>
+      <nav class="header-container navbar">
         <div class="logo">
-          <img
-            src="images/oak nook logo.png"
-            alt="outline of a tree within a circle"
-          />
+          <a href="index.html"
+            ><img
+              src="images/oak nook logo.png"
+              alt="outline of a church with trees around it"
+          /></a>
         </div>
 
-        <div class="menu">
-          <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href=""><li>About</li></a>
-            <a href=""><li>Out & About</li></a>
-            <a href=""><li>Book</li></a>
-            <a href=""><li>Reviews</li></a>
-            <a href="find-us.html"><li>Find Us</li></a>
-          </ul>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="nav-link no-line">Home</a>
+          <a href="#about" class="nav-link no-line">About</a>
+          <a href="out-and-about.html" class="nav-link no-line">Out & About</a>
+          <a
+            href="mailto:melcornish@me.com?subject=New Oak Nook Enquiry"
+            class="nav-link no-line"
+            >Book</a
+          >
+          <a href="find-us.html" class="nav-link no-line">Find Us</a>
         </div>
-      </div>
+
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          id="bars"
+          onclick="navFunction()"
+          ><i class="white fa-solid fa-bars"></i
+        ></a>
+      </nav>
     </header>
 
     <div class="coming-soon-container">
@@ -120,7 +132,9 @@
       </h4>
       <div class="coming-soon-icons">
         <a><i class="fa-brands fa-instagram"></i></a>
-        <a><i class="fa-regular fa-envelope"></i></a>
+        <a href="mailto:melcornish@me.com?subject=New Oak Nook Enquiry"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
         <a><i class="fa-solid fa-phone"></i></a>
       </div>
     </div>
@@ -140,7 +154,7 @@
         <div class="faq-box">
           <h4 class="faq-title">What does the price include?</h4>
           <p class="faq-answer">
-            The apartment is equipped with ben linen, towels. Smoking is not
+            The apartment is equipped with bed linen, towels. Smoking is not
             permitted insde the property and pets are not permitted to stay. The
             apartment offers free Wi-Fi.
           </p>
@@ -197,13 +211,19 @@
     <footer>
       <div class="footer">
         <div>
-          <img src="images/oak nook logo.png" alt="" class="logo" />
+          <a href="index.html"
+            ><img src="images/oak nook logo.png" alt="" class="logo"
+          /></a>
         </div>
         <div class="useful-links">
           <h5>Useful Links</h5>
           <ul>
             <li><a href="find-us.html">> How To Find Us</a></li>
-            <li><a href="">> Make A Booking</a></li>
+            <li>
+              <a href="mailto:melcornish@me.com?subject=New Oak Nook Enquiry"
+                >> Make A Booking</a
+              >
+            </li>
             <li><a href="faqs.html">> FAQ's</a></li>
             <li><a href="">> Terms & Conditions</a></li>
           </ul>
@@ -221,5 +241,14 @@
         <a href="#">LadyCornish Web Design</a><i class="fa-solid fa-heart"></i>
       </p>
     </div>
+
+    <!--Up Button-->
+
+    <button onclick="topFunction()" id="myBtn">
+      <img src="images/up-arrow.png" alt="up button" />
+    </button>
+
+    <!--End of Up Button-->
+    <script src="script.js"></script>
   </body>
 </html>

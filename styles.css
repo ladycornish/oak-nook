@@ -15,7 +15,11 @@
 }
 
 body {
+  width: 100vw;
+  height: 100%;
   background-color: var(--dun);
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -36,48 +40,14 @@ h4 {
   font-family: "Raleway", serif;
 }
 
-.coming-soon-container {
-  width: 100%;
-  background-color: whitesmoke;
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  text-align: center;
+.white {
+  color: fff;
 }
 
-.coming-soon-title {
-  font-size: 60px;
-}
-.coming-soon-text {
-  padding: 30px 0;
-  font-family: "Roboto", "serif";
-}
-
-.coming-soon-icons i {
-  color: var(--ecru);
-  font-size: 40px;
-  cursor: pointer;
-  padding: 0 10px;
-}
-.coming-soon-icons i:hover {
-  color: var(--walnut-brown);
-  font-size: 40px;
-}
-
-.header-container {
-  width: auto;
-  height: auto;
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  list-style: none;
-}
+/* social bar */
 
 .socials-bar {
-  width: 100%;
+  width: 100vw;
   background-color: var(--dun);
   color: var(--walnut-brown);
   font-size: 20px;
@@ -102,33 +72,132 @@ h4 {
   max-width: 150px;
 }
 
-.menu {
-  width: 100%;
-}
+/* End of socials Bar */
 
-.menu ul {
+/* Navbar */
+.navbar {
+  width: 100vw;
+  background-color: var(--light-brown-col);
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style: none;
+  z-index: 100;
 }
 
-.menu ul a {
-  text-decoration: none;
+.topnav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+.topnav a {
   font-family: "Raleway", serif;
   font-size: 25px;
-  color: var(--bistre);
+  color: var(--walnut-brown);
   padding: 20px 10px;
 }
 
-.menu ul a:hover {
-  color: var(--sepia);
-  text-decoration: underline;
+.topnav a:hover {
+  color: var(--ecru);
+}
+
+.no-line {
+  text-decoration: none;
+}
+
+.icon {
+  display: none;
+  cursor: pointer;
+  background-color: var(--light-brown-col);
+  border-radius: 25px;
+}
+
+.icon i {
+  font-size: 1.8rem;
+  margin: 10px 4px;
+}
+
+a {
+  color: var(--walnut-brown);
+  padding: 0 10px;
+  font-family: "Poppins";
+  font-size: 1rem;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--ecru);
+}
+
+.topnav.responsive {
+  flex-direction: column;
+}
+
+.topnav.responsive a {
+  display: block;
+}
+
+/* End Of Navbar */
+
+.coming-soon-container {
+  width: 100%;
+  background-color: whitesmoke;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.coming-soon-title {
+  font-size: 60px;
+}
+.coming-soon-text {
+  padding: 30px 0;
+  font-family: "Roboto", "serif";
+  color: var(--bistre);
+}
+
+.coming-soon-text a {
+  font-size: 20px;
+  font-family: "Roboto", "serif";
+  color: var(--ecru);
+  text-decoration: none;
+}
+
+.coming-soon-text a:hover {
+  color: var(--walnut-brown);
+}
+
+.coming-soon-icons i {
+  color: var(--ecru);
+  font-size: 40px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.coming-soon-icons i:hover {
+  color: var(--walnut-brown);
+  font-size: 40px;
+}
+
+.header-container {
+  width: 100vw;
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  list-style: none;
 }
 
 .hero-container {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 550px;
   background-image: url(images/galleywood-common.jpeg);
   display: flex;
@@ -158,6 +227,7 @@ h4 {
   border: 3px solid var(--walnut-brown);
   border-radius: 15px;
   border: none;
+  cursor: pointer;
 }
 
 .book-button:hover {
@@ -236,16 +306,22 @@ h4 {
   align-items: center;
   padding: 20px 0 60px 0;
 }
+.gallery-section h4 {
+  padding-bottom: 20px;
+  color: var(--bistre);
+}
 
 .gallery-container {
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .gallery-img-box img {
   max-width: 300px;
+  padding-bottom: 10px;
 }
 
 .mapouter {
@@ -280,21 +356,23 @@ h4 {
 /** Out and About Info **/
 
 .common-container {
-  width: 80%;
+  width: 90%;
   background-color: whitesmoke;
   margin: 40px 0;
-  padding: 40px;
+  padding: 30px;
 }
 
 .common-img-box {
   width: 100%;
   margin: 40px 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .common-img {
   max-width: 150px;
+  padding-bottom: 30px;
 }
 
 .racecourse-img {
@@ -375,4 +453,130 @@ footer img {
 
 .copy a {
   color: var(--walnut-brown);
+}
+
+/* Up Button */
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+}
+
+#myBtn img {
+  width: 100%;
+  outline: none;
+}
+
+/* End of Up Button */
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .about {
+    width: 90%;
+    margin-top: 80px;
+    align-items: space-around;
+  }
+
+  .icons-container {
+    justify-content: space-evenly;
+  }
+
+  .common-container {
+    padding: 15px;
+  }
+
+  .find-us-info {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    background-color: whitesmoke;
+    flex-direction: column;
+  }
+
+  .topnav {
+    width: 100vw;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .topnav a {
+    display: none;
+  }
+
+  .topnav.responsive a {
+    padding-top: 0;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+  }
+
+  .icon-box {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .gallery-container {
+    justify-content: center;
+  }
+
+  .mapouter {
+    max-width: 90vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gmap_canvas {
+    display: flex;
+    flex-direction: column;
+    width: 80vw !important;
+  }
+
+  .gmap_canvas a {
+    display: none;
+  }
+
+  .common-box {
+    flex-direction: column;
+  }
+
+  .left-col,
+  .right-col {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .left-col img {
+    height: auto;
+  }
+
+  .right-col p {
+    padding: 10px;
+    font-size: 22px;
+  }
+
+  .find-us-info {
+    width: 100%;
+  }
 }
