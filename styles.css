@@ -15,9 +15,9 @@
 }
 
 body {
+  background-color: rgba(205, 191, 172, 0.4);
   width: 100vw;
   height: 100%;
-  background-color: var(--dun);
   position: relative;
   scroll-behavior: smooth;
 }
@@ -218,25 +218,28 @@ a:hover {
 }
 
 .book-button {
-  background-color: var(--walnut-brown);
-  color: var(--ecru);
+  background-color: whitesmoke;
+  color: var(--bistre);
   font-family: "Raleway", serif;
   margin-top: 45px;
   font-size: 30px;
   padding: 10px 20px;
-  border: 3px solid var(--walnut-brown);
-  border-radius: 15px;
-  border: none;
+  border: 3px solid whitesmoke;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .book-button:hover {
-  color: var(--walnut-brown);
-  background-color: whitesmoke;
+  color: whitesmoke;
+  background-color: var(--walnut-brown);
+}
+
+.break  {
+  background-color: white;
+  height: auto;
 }
 
 .about {
-  background-color: var(--var-dark-green);
   margin: 160px auto 80px auto;
   width: 75%;
   height: auto;
@@ -256,46 +259,54 @@ a:hover {
   font-family: "Raleway", serif;
 }
 
-.icons-container {
-  width: 90%;
+.icons-container { 
+  width: 80%;
   margin: 60px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .icon-box {
+  max-width: 150px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: centre;
+  justify-content: space-between;
   margin-bottom: 40px;
   padding: 0 10px;
 }
 
 .icon-box i {
-  font-size: 60px;
+  font-size: 40px;
+  text-align: center;
   padding-bottom: 10px;
   color: var(--bistre);
 }
 
 .icon-box h6 {
-  font-size: 30px;
+  font-size: 20px;
+  text-align: center;
   font-family: "Spectral", serif;
   color: var(--walnut-brown);
 }
 
-.icon-box i:hover {
-  border-bottom: 3px solid whitesmoke;
-  width: 75%;
-  text-align: center;
-}
-
 .icon-box p {
-  font-size: 18px;
+  font-size: 16px;
+  text-align: center;
   font-family: "Roboto", serif;
   color: var(--walnut-brown);
 }
+
+
+
+
+
+.active,
+.dot:hover {
+  background-color: #717171;}
 
 .gallery-section {
   width: 100%;
@@ -560,6 +571,13 @@ footer img {
     flex-direction: column;
   }
 
+  .common-container {
+    width: 100%;
+  }
+  .common-img {
+    max-width: 250px;
+  }
+
   .left-col,
   .right-col {
     width: 100%;
@@ -578,5 +596,11 @@ footer img {
 
   .find-us-info {
     width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding-bottom: 40px;
+    text-align: center;
   }
 }
