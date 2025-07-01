@@ -234,7 +234,7 @@ a:hover {
   background-color: var(--walnut-brown);
 }
 
-.break  {
+.break {
   background-color: white;
   height: auto;
 }
@@ -255,13 +255,14 @@ a:hover {
 
 .about p {
   padding: 20px;
+  margin-bottom: 40px;
   font-size: 22px;
   font-family: "Raleway", serif;
 }
 
-.icons-container { 
+.icons-container {
   width: 80%;
-  margin: 60px 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -300,13 +301,10 @@ a:hover {
   color: var(--walnut-brown);
 }
 
-
-
-
-
 .active,
 .dot:hover {
-  background-color: #717171;}
+  background-color: #717171;
+}
 
 .gallery-section {
   width: 100%;
@@ -502,6 +500,8 @@ footer img {
 
   .icons-container {
     justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .common-container {
@@ -538,8 +538,13 @@ footer img {
     right: 5px;
   }
 
+  .icons-container {
+    margin-bottom: 0;
+  }
+
   .icon-box {
     text-align: center;
+    width: auto;
   }
 
   .title {
@@ -602,5 +607,12 @@ footer img {
     flex-direction: column;
     padding-bottom: 40px;
     text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .icons-container {
+    width: 100%;
+    padding: 0;
   }
 }
