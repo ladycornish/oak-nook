@@ -50,11 +50,11 @@ h4 {
   width: 100vw;
   background-color: var(--dun);
   color: var(--walnut-brown);
-  font-size: 20px;
   padding: 10px 0;
 }
 .socials-bar i {
   padding-left: 20px;
+  font-size: 30px;;
   cursor: pointer;
 }
 
@@ -102,6 +102,7 @@ h4 {
 
 .topnav a:hover {
   color: var(--ecru);
+  text-decoration: underline;
 }
 
 .no-line {
@@ -143,46 +144,7 @@ a:hover {
 
 /* End Of Navbar */
 
-.coming-soon-container {
-  width: 100%;
-  background-color: whitesmoke;
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  text-align: center;
-}
 
-.coming-soon-title {
-  font-size: 60px;
-}
-.coming-soon-text {
-  padding: 30px 0;
-  font-family: "Roboto", "serif";
-  color: var(--bistre);
-}
-
-.coming-soon-text a {
-  font-size: 20px;
-  font-family: "Roboto", "serif";
-  color: var(--ecru);
-  text-decoration: none;
-}
-
-.coming-soon-text a:hover {
-  color: var(--walnut-brown);
-}
-
-.coming-soon-icons i {
-  color: var(--ecru);
-  font-size: 40px;
-  cursor: pointer;
-  padding: 0 10px;
-}
-.coming-soon-icons i:hover {
-  color: var(--walnut-brown);
-  font-size: 40px;
-}
 
 .header-container {
   width: 100vw;
@@ -240,7 +202,7 @@ a:hover {
 }
 
 .about {
-  margin: 160px auto 80px auto;
+  margin: 80px auto 80px auto;
   width: 75%;
   height: auto;
   color: var(--bistre);
@@ -258,6 +220,10 @@ a:hover {
   margin-bottom: 40px;
   font-size: 22px;
   font-family: "Raleway", serif;
+}
+
+.about-text span {
+  font-weight: bolder;
 }
 
 .icons-container {
@@ -306,6 +272,23 @@ a:hover {
   background-color: #717171;
 }
 
+.availability-container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.air-bnb-box img{
+  max-width: 200px;
+}
+
+.break-section {
+  height: 50px;
+}
+
 .gallery-section {
   width: 100%;
   background-color: whitesmoke;
@@ -335,6 +318,7 @@ a:hover {
 
 .mapouter {
   margin: 50px auto;
+  max-width: 600px;
 }
 
 .find-us-container {
