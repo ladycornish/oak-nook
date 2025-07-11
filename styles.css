@@ -54,7 +54,7 @@ h4 {
 }
 .socials-bar i {
   padding-left: 20px;
-  font-size: 30px;;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -144,8 +144,6 @@ a:hover {
 
 /* End Of Navbar */
 
-
-
 .header-container {
   width: 100vw;
   height: auto;
@@ -202,7 +200,7 @@ a:hover {
 }
 
 .about {
-  margin: 80px auto 80px auto;
+  margin: 80px auto 20px auto;
   width: 75%;
   height: auto;
   color: var(--bistre);
@@ -242,8 +240,8 @@ a:hover {
   flex-direction: column;
   align-items: centre;
   justify-content: space-between;
-  margin-bottom: 40px;
-  padding: 0 10px;
+
+  padding: 0;
 }
 
 .icon-box i {
@@ -272,6 +270,10 @@ a:hover {
   background-color: #717171;
 }
 
+.preview-container {
+  padding-bottom: 80px;
+}
+
 .availability-container {
   background-color: whitesmoke;
   display: flex;
@@ -281,7 +283,7 @@ a:hover {
   padding: 40px 0;
 }
 
-.air-bnb-box img{
+.air-bnb-box img {
   max-width: 200px;
 }
 
