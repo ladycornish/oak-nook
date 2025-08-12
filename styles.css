@@ -470,11 +470,12 @@ footer img {
 
 .review {
   background-color: #fff;
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
   font-size: larger;
   border-radius: 5px;
   padding: 20px;
-  
+
+  margin-bottom: 40px;
 }
 
 .review p {
